@@ -174,7 +174,7 @@ class ConvertThread(QThread):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle('温岭检察音视频解码工具')
+        self.setWindowTitle('音视频解码工具')
         self.setMinimumSize(800, 600)
         self.setStyleSheet('QMainWindow { background-color: #f5f5f5; }')
         # 检查系统是否安装了ffmpeg
@@ -232,7 +232,7 @@ class MainWindow(QMainWindow):
         self.bottom_layout.addWidget(self.status_label)
 
         # 创建系统版本标签
-        self.version_label = QLabel('技术支持：许钦滔\nArm64麒麟系统测试版')
+        self.version_label = QLabel('Arm64麒麟系统测试版')
         self.version_label.setAlignment(Qt.AlignCenter)
         self.version_label.setStyleSheet('QLabel { color: #999; font-size: 12px; padding: 10px; }')
         self.bottom_layout.addWidget(self.version_label)
